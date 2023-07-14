@@ -31,10 +31,9 @@ Wait for few minutes and then your site will be live at ` https://username.githu
 This command will generate an `index.yaml` file in the `charts.aetherproject.org` directory. The `--url` flag sets the base **URL** that the charts can be found at in the generated `index.yaml` file.
 
 ```bash
-helm repo index charts.aetherproject.org --url https://username.github.io/Aether_Project_Charts/
+helm repo index . --url https://username.github.io/Aether_Project_Charts/
 
 # move the index.yaml in the parent directory
-mv charts.aetherproject.org/index.yaml .
 ```
 
 ### 5. Generate `README.md`
